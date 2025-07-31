@@ -1,0 +1,28 @@
+.seat{
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    margin: 5px;
+}
+.selected{
+    background-color: #ffc107;
+    color: #fff;
+}
+#seats-container {
+  display: grid; /* 그리드 레이아웃 적용 */
+  grid-template-columns: repeat(6, 1fr); /* 6열 배치 */
+  gap: 10px; /* 좌석 간격 */
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9; /* 배경색 */
+  border-radius: 12px; /* 둥근 테두리 */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 그림자 효과 */
+}
