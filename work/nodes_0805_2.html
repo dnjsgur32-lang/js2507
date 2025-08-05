@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodes 연습</title>
+</head>
+
+<body>
+    <div id="div1">
+        <p id="p1">이건 첫번째 레슨</p>
+        <p id="p2">이건 두번째 레슨</p>
+        <p id="p3">이건 세번째 레슨</p>
+    </div>
+
+    <!-- <button onclick="myFunction()">레슨 지우기</button>
+    
+    <script>
+        function myFunction() {
+            document.getElementById("p3").remove()
+        }
+    </script> -->
+
+    <!-- <script>
+        const parent = document.getElementById("div1")
+        const child = document.getElementById("p2")
+        parent.removeChild(child)
+    </script> -->
+
+    <script>
+        const parent = document.getElementById("div1");
+        const child = document.getElementById("p2");
+        const para = document.createElement("p");
+        const node = document.createTextNode("이건 새로운 레슨");
+        para.appendChild(node);
+        parent.replaceChild(para, child);
+    </script>
+
+    <script src="./js/nodes2.js"></script>
+</body>
+
+</html>

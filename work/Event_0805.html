@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 자바 이벤트 연습</title>
+    
+</head>
+
+<body onclick="checkCookies()">
+    <!-- this를 이해해보자 -->
+    <h2 onclick="Ooops(this)">Click on this text!</h2>
+
+    <button onclick="displayDate()">The time is ?</button>
+    <p id="resultTime"></p>
+
+    <button id="myBtn">Try it</button>
+
+     <p id="resultCookie"></p>
+
+     Enter your name: <input type="text" id="fname" oninput="upperCase()">
+<p>When you write in the input field, a function is triggered to transform the input to upper case.</p>
+
+
+Enter your name: <input type="text" id="fname" oninput="upperCase()">
+<p>When you write in the input field, a function is triggered to transform the input to upper case.</p>
+      <script src="./js/Event.js"></script>
+</body>
+
+</html>

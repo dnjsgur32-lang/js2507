@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodes 연습</title>
+</head>
+
+<body>
+    <div id="div1">
+        <p id="p1">이것은 첫번째 문장</p>
+        <p id="p2">이것은 두번째 문장</p>
+    </div>
+    <!-- <script>
+        const myP = document.createElement("p")
+        const mytxt = document.createTextNode("이것은 세번째 문장")
+        myP.appendChild(mytxt)
+
+        let div1 = document.getElementById("div1")
+        div1.appendChild(myP)
+        
+
+    </script> -->
+    <script>
+        const myP = document.createElement("p")
+        const mytxt = document.createTextNode("이거슨 세번째 레슨")
+        myP.appendChild(mytxt)
+
+        let div1 = document.getElementById("div1")
+        div1.appendChild(myP)
+
+        const element =document.getElementById("div1")
+        const child = document.getElementById("p1")
+        element.insertBefore(myP,child)
+    </script>
+
+    <script src="./js/nodes1.js"></script>
+</body>
+
+</html>
